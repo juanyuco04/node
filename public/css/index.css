@@ -6,15 +6,50 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* Botones */
+
+.bottomA{
+    background-color: rgb(0,91,173) !important;
+    color: #fff !important;
+    width: 80px;
+    height: 40px;
+}
+
+.btn-primary{
+    background-color: rgb(0,91,173) !important;
+    color: #fff !important;
+}
+
+.page-link{
+    background-color: rgb(0,91,173) !important;
+    color: #fff !important;
+}
+
+.page-link:hover{
+    border-color: #fff !important;
+}
+
+.paginate_button:hover{
+    background: #fff !important;
+    border: none !important
+}
+
+/* ---------------------------------- */
 
 body {
     background: #ebebeb;
 }
+
+div .row .col-sm-12{
+    max-width: 936px;
+}
+
 div .row .col-sm-12 .dataTables_filter  {
     position: fixed;
-    right: 100px;
-    top : 80px
+    top : 80px;
+    left: 71.5%;
 }
+
 div .row .col-sm-12 .dataTables_paginate   {
     position: fixed;
     left: 40%;
@@ -25,10 +60,6 @@ div .row .col-sm-12 .dataTables_info   {
     position: fixed;
     right: 20%;
     bottom: 6%;
-}
-.bottomA {
-    width: 80px;
-    height: 40px;
 }
 
 
@@ -106,10 +137,10 @@ div .dt-buttons .buttons-print:hover {
 .conainer{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 80%;
 }
 div.dataTables_wrapper {
-    width: 800px;
+    width: 95%;
     margin: 0 auto;
 }
 div .col-sm-12.col-md-6:first-child{
@@ -127,7 +158,7 @@ div #tabla_content_length  {
 body nav {
     width: 100%;
     height: 70px;
-    background: #ff8138;
+    background: rgb(0,91,173);
     display: flex;
     justify-content: center;
     align-content: center;
@@ -149,9 +180,8 @@ body nav div div {
     display: none;
 }
 
-body nav div div i.fas {
-    font-size: 2em;
-    color: #fff;
+body nav div div img {
+    width: 30px;
 }
 
 nav div header a {
@@ -197,6 +227,7 @@ nav div ul li a i {
 nav div ul li a h2 {
     font-size: 14px;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 
@@ -220,7 +251,7 @@ body .pull-down {
     width: 80%;
     height: 100%;
     padding: 15px 25px;
-    background-color: #ff8138;
+    background-color: rgb(0,91,173);
     transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
@@ -256,7 +287,7 @@ body .content-all {
     width: 100%;
     max-width: 1200px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 20px auto;
 }
 
@@ -275,11 +306,11 @@ body .content-all .main-left {
     display: flex;
     align-items: flex-start;
     height: 70px;
-    width: auto;
+    width: 100%;
 }
 
 .content-all .main-left a:hover {
-    background-color: #fff;
+    background-color: rgb(237, 237, 237);
     transition: background-color .1s ease-out;
 }
 
@@ -289,7 +320,7 @@ body .content-all .main-left {
 }
 
 .main-left a div img {
-    height: 40px;
+    height: 30px;
     border-radius: 50%;
 }
 
@@ -318,6 +349,11 @@ body .content-all .main-left {
     body nav div {
         margin: auto 25px;
     }
+
+    .conainer {
+        max-width: 70%;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 690px){
@@ -341,7 +377,7 @@ body .content-all .main-left {
         width: 80%;
         height: 100%;
         padding: 15px 25px;
-        background-color: #ff8138;
+        background-color: rgb(0,91,173);
         transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
         overflow-y: auto;
     }
@@ -380,11 +416,24 @@ body .content-all .main-left {
         margin: auto 25px;
     }
 
+    body .contenido-barra-dezplegada {
+        display: none;
+    }
+
     body .content-all .main-left {
         display: none;
     }
 
     body .content-all .body-content {
         margin: 20px auto;
+    }
+
+    div .row .col-sm-12 .dataTables_filter  {
+        top : 50px;
+    }
+
+    .conainer {
+        max-width: 500px !important;
+        width: 100%;
     }
 }
