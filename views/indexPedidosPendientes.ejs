@@ -64,7 +64,7 @@
             <li>
                 <a href="#">
                     <i class="fa-solid fa-bell"></i>
-                    <h2>Notificaciones</h2>
+                    <h2>Notificaciones </h2>
                 </a>
             </li>
             <li>
@@ -155,6 +155,12 @@
                 </div>
                 <p>pedidos</p>
             </a>
+            <a href="/pPendiente">
+                <div>
+                    <img src="img/logo-sena-Naranja-300x300-1.jpg" alt="">
+                </div>
+                <p>pedidos Pendientes</p>
+            </a>
             <a href="/r">
                 <div>
                     <img src="img/logo-sena-Naranja-300x300-1.jpg" alt="">
@@ -163,96 +169,19 @@
             </a>
         </div>
         <div class="conainer my-1 mx-1">
-                <button type="button" onclick="Abrir_Modal()" class="bottomA btn btn-primary m-3">Nuevo</button>
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12"  style="overflow-x: scroll;">
                     <table id="tabla_content"  class= "table display nowrap mt-2 table-bordered table-striped " style="width: 100%;">
                         <thead>
                             <tr class="text-center">
                             <th>Nº</th>
-                            <th>Identificacion</th>
-                            <th>Nombre</th>
-                            <th>Fecha Navcimiento</th>
+                            <th>Cliente</th>
                             <th>Estado</th>
-                            <th>Correo</th>
-                            <th>Telefono</th>
-                            <th>Rol<th>
+                            <th>Fecha</th>
                             </tr>
                         </thead>
             
                         <tbody id="tabla"></tbody>
                     </table>
-                </div>
-                <div class="modal fade" id="MyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Registrar usuario</h5>
-                        <button id="salir" type="button" class="btn-close" style="display: block;" data-bs-dismiss="modal" aria-label="Close" ></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <p><b>Todos los campos son obligatorios</b></p>
-                                <div class="mb-3">
-                                <input type="hidden" class="form-control" id="id">
-                                </div>
-                                <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Identificacion</label>
-                                <input type="number" class="form-control" id="identificacion">
-                                </div>
-                                <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Nombre</label>
-                                <input type="text" class="form-control" id="nombre">
-                                </div>
-                                <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Fecha Nacimiento</label>
-                                <input type="date" class="form-control" id="fechaNacimiento">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="recipient-name" class="col-form-label">Estado</label>
-                                    <select class="form-select" name="estadoProducto" id="estado" required>
-                                    <option selected disabled value="">Estado</option>
-                                    <option>activo</option>
-                                    <option>inactivo</option>
-                                    </select>
-                                </div>
-                               
-                                <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="contreseña">
-                                </div>
-                                <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Correo</label>
-                                <input type="email" class="form-control" id="correo">
-                                </div>
-                                <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Telefono</label>
-                                <input type="text" class="form-control" id="telefono">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="recipient-name" class="col-form-label">Rol</label>
-                                    <select class="form-select" name="rol" id="rol" required>
-                                    <option selected disabled value="">Rol</option>
-                                    <option>Administrador</option>
-                                    <option>Asesor</option>
-                                    <option>Propietario</option>
-                                    <option>Cliente</option>
-                                    </select>
-                                </div>
-                                <!--  <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="registrar_Asesoria()">Guardar</button>
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="Actualizar_Asesoria()">Actualizar</button>
-                                </div> -->
-                            </form>
-                        </div> 
-                        <div class="modal-footer">
-                        <button id="actualizar" type="button" class="btn btn-primary" style="display: block;" onclick="Actualizar_Usuario()">Actualizar</button>
-    
-                        <button id="close" type="button" class="btn btn-secondary" style="display: block;" data-bs-dismiss="modal">Close</button>
-                        <button id="registrar" type="button" class="btn btn-primary " style="display: block;" onclick="registrar_Usuario()">Registrar</button>
-                        </div>
-                    </div>
-                    </div>
                 </div>
         </div>
     </div>
@@ -269,11 +198,8 @@
 
 
     <script src="/js/sweetalert2.all.min.js"></script>
-    <script src="/js/indexUsuario.js"></script>
+    <script src="/js/scripPedido.js"></script>
     <script src="/js/scrip.js"></script>
 </body> 
 
 </html>
-
-
-

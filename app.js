@@ -34,6 +34,7 @@ Servidor.use(require('./routes/routEmpresa'))
 Servidor.use(require('./routes/routCategoria'))
 Servidor.use(require('./routes/routSeguridad'))
 Servidor.use(require('./routes/routReportes'))
+Servidor.use(require('./routes/routPedido'))
 
 
 

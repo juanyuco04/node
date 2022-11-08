@@ -1,8 +1,5 @@
-    let token = localStorage.getItem('token');
     window.addEventListener("load", async() =>{
       await Listar_Usuario();
-      if(!token) window.location.href = '/'
-      console.log(token)
     })
 
     var MyModal = new bootstrap.Modal(document.getElementById('MyModal'), {

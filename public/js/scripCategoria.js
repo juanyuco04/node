@@ -1,4 +1,5 @@
 
+
     let token = localStorage.getItem('token');
     window.addEventListener("load", async() =>{
       await Listar_categoria();
@@ -121,6 +122,7 @@ function Actualizar_Categoria(){
     ///     PRIMER PASO: listar desde la base de datos e Insertar datos en la tabla
     
     function Listar_categoria(){
+
 
       console.log('holllllllllllllll')
             
