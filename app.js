@@ -4,7 +4,7 @@ const express= require('express');
 
 const session = require('express-session')
 
-const bodyparser= require("body-parser"); //Se importa el módulo body-parser para recivir parametros 
+const bodyparser= require("body-parser"); //Se importa el módulo body-parser para recibir parametros 
 
 // se configura las variables de entorno 
 const dotenv = require('dotenv');
@@ -17,7 +17,7 @@ const Servidor = express();
 Servidor.use(express.static(__dirname+'/public'));//Se configura la carpeta publica 
 Servidor.use(bodyparser.json());//Se configura para recibir parametros json 
 Servidor.use(bodyparser.urlencoded({extended:false}));// Se configura para recibir parametros de formularios 
- Servidor.set('view engine','ejs');//Se configura el motor de plantillas ejs 
+Servidor.set('view engine','ejs');//Se configura el motor de plantillas ejs 
 Servidor.set('views',__dirname+'/views');//Se configura la carpeta contenedora de las vistas 
 
 Servidor.use(session({
@@ -38,6 +38,9 @@ Servidor.use(require('./routes/routPedido'))
 
 
 
+
+
+Servidor.use(require('./routes/routIndex'))
 
 
 Servidor.listen(4000,()=>{ 
